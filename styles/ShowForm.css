@@ -1,0 +1,21 @@
+.cont-input{
+    min-width: 60vw;
+    min-height: 15vh;
+    margin: 20px;
+    padding: 10px;
+}
+
+.cont-input .input{
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cont-input .input .boton{
+    padding: 5px;
+    color: black;
+}

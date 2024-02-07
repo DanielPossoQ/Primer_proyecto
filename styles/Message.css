@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    position: absolute;
+    right: 50px;
+    flex-wrap: wrap;
+}
+
+.cube{
+    height: 200px;
+    min-width: 300px;
+    background-color: rgb(39, 220, 75);
+    display: flex;
+    border: 2px solid white;
+    border-radius: 50px;
+    flex-direction: column;
+    align-items: center;
+}   
+
+.cube button{
+    width: 120px;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.cube button:hover{
+    transform: scale();
+}
