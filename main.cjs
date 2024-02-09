@@ -4,6 +4,7 @@ const app = express()
 const morgan = require('morgan')
 const cors = require('cors')
 app.use(express.json())
+app.use(express.static('dist'))
 
 const x = database.persons
 
@@ -63,5 +64,7 @@ app.post("/persons",((req,res)=>{
 }))
 
 
-app.listen(3001)
-console.log("servidor corriendo...");
+const PORT = process.env.PORT || 3001
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`)
+})
