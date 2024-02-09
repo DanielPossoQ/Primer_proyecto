@@ -8,7 +8,7 @@ app.use(express.static('dist'))
 
 const x = database.persons
 
-app.get("/info",((req,res)=> {
+app.get("/",((req,res)=> {
   res.send(`<h1>Hola!</h1>
   <h2>Phonebok tiene informacion para ${database.persons.length} personas</h2>
   <h3>${new Date()}</h3>
